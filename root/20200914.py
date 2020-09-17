@@ -1,4 +1,4 @@
-# Longest Substring without Repeating Characters
+# Longest Substring Without Repeating Characters
 # Given a string, find th length of the longest substring without repeating characters.
 # Example 1:
 # Input: 'abcabcbb'
@@ -33,8 +33,6 @@ def get_longest(string):
         curI[string[j]] = j + 1
     # return answer
     return print(answer)
-
-
 
 fullstring = 'pwewkeweesowie'
 get_longest(fullstring)
