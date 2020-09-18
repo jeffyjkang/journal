@@ -20,22 +20,23 @@ def find_median(sort_1, sort_2):
     if m > n:
         temp = sort_1; sort_1 = sort_2; sort_2 = temp
         tmp = m; m = n; n = tmp
-    # assign index min to 0, index max to length of shortest list, index mid to the mid point of the sum of both lists
-    i_min = 0; i_max = m; i_mid = int((m + n + 1) / 2)
+    # assign i_min to 0, i_max to length of shortest list, half_length to half the length of the sum of both lists
+    i_min = 0; i_max = m; half_length = int((m + n + 1) / 2)
     # continue looping until condition is met, or index of min reaches index of max
     while i_min <= i_max:
-        # assign i to the floor of halfway between the min index and max index
+        # assign i to the floor of halfway between i_min and i_max
         i = int((i_min + i_max) / 2)
         # assign j to the difference between the middle index and i
-        j = i_mid - i
-        # if i is less than the max index and the value at list 2 at index j - 1 is greater than the value at list 1 at index i:
+        j = half_length - i
+        # if i is less than i_max and the value at list 2 at index j - 1 is greater than the value at list 1 at index i:
         if i < i_max and sort_2[j-1] > sort_1[i]:
-            # reassign the min index to i + 1
+            # reassign the min index to i + 1, i is too small
             i_min = i + 1
-        # else if i is greater than the min index and the value at list 1 at index i - 1 is greater than the value at list 2 at index j:
+        # else if i is greater than i_min and the value at list 1 at index i - 1 is greater than the value at list 2 at index j:
         elif i > i_min and sort_1[i-1] > sort_2[j]:
-            # reassign the max index to i - 1
+            # reassign the max index to i - 1, i is too big
             i_max = i - 1
+        # else, i is in the right spot
         else:
             # initialize a max left value
             max_left = 0
