@@ -52,3 +52,5 @@ string = 'PAYPALISHIRING'
 row_count = 4
 
 print(zigzag_converter(string, row_count))
+
+TAGS = ['SORTING', 'CONVERSION', 'STRING_BUFFER']

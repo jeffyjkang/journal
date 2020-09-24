@@ -34,3 +34,5 @@ def reverse_int(x):
 
 i = 120
 print(reverse_int(i))
+
+TAGS = ['SORTING', 'REVERSE', 'NUMBERS']

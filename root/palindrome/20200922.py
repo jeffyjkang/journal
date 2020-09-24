@@ -34,3 +34,5 @@ def is_palindrome(x):
 
 num = 12321
 print(is_palindrome(num))
+
+TAGS = ['PALINDROME', 'NUMBERS']

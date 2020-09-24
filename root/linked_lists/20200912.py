@@ -92,3 +92,5 @@ first_linked_list = init_linked_list(first_nums)
 second_linked_list = init_linked_list(second_nums)
 sum_linked_list = add_two_numbers(first_linked_list, second_linked_list)
 read_linked_list(sum_linked_list)
+
+TAGS = ['LINKED_LIST', 'SINGLY_LINKED_LIST', 'REVERSE']

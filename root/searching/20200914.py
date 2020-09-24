@@ -36,3 +36,5 @@ def get_longest(string):
 
 fullstring = 'pwewkeweesowie'
 get_longest(fullstring)
+
+TAGS = ['SEARCH', 'SUBSTRING']

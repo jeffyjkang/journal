@@ -44,3 +44,5 @@ def expand_around_center(s, left, right):
 
 string = 'badaadaxyz'
 print(longest_palindrome(string))
+
+TAGS = ['PALINDROME', 'SUBSTRING']

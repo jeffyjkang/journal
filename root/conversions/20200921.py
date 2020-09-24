@@ -77,3 +77,5 @@ def atoi(string):
 
 string = 'words and 987'
 print(atoi(string))
+
+TAGS = ['CONVERSION', 'NUMBERS', 'STRINGS']
