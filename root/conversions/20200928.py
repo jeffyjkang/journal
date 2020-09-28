@@ -1,0 +1,72 @@
+# Integer to Roman
+# Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+# Symbol  Value
+# I       1
+# V       5
+# X       10
+# L       50
+# C       100
+# D       500
+# M       1000
+# For example, two is written as II in Roman numeral, just two one's added together.
+# Twelve is written as, XII, which si simply X + II.
+# The number twenty seven is written as XXVII, which is XX + V + II.
+# Roman numerals are usually written largest to smallest from left to right.
+# However, the numeral for four is not IIII.
+# Instead, the number four is written as IV.
+# Because the one is before the five we subtract it making four.
+# The same principle applies to the number nine, which is written as IX.
+# There are six instances where subtraction is used:
+# I can be placed before V(5) and X(10) to make 4 and 9.
+# X can be placed before L(50) and C(100) to make 40 and 90.
+# C can be placed before D(500) and M(1000) to make 400 and 900.
+# Given an integer, convert it to a roman numeral.
+# Input is guaranteed to be within the range from 1 to 3999.
+# Example 1:
+# Input: 3
+# Output: "III"
+# Example 2:
+# Input 4
+# Output: "IV"
+# Example 3:
+# Input: 9
+# Output: "IX"
+# Example 4:
+# Input: 58
+# Output: "LVIII"
+# Explanation: C = 100, L = 50, XXX = 30 and III = 3
+# Example 5:
+# Input: 1994
+# Output: "MCMXCIV"
+# Explanation: M = 1000, CM = 900, XC = 90 and IV = 4
+
+def int_to_rom(int):
+    # initialize list to hold equivalent integer value of roman numerals
+    int_lst = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    # initialize list to hold roman numeral strings
+    rom_lst = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
+    # initialize the return roman numeral string to an empty string
+    rom_str = ''
+    # initialize index to 0
+    i = 0
+    # loop while int argument is greater than 0 and index is less than the length of int_lst
+    while int > 0 and i < len(int_lst):
+        # if argument int is greater or equal to the value of int_lst at index i
+        if int >= int_lst[i]:
+            # append the value of rom_lst at index i to the return rom_str
+            rom_str += rom_lst[i]
+            # subtract the value of in_lst at index of i from the int argument
+            int -= int_lst[i]
+        # else, argument int is less than the value of int_lst at index i
+        else:
+            # increment the index pointer
+            i += 1
+    # return the fully constructed rom_str at the end of the loop
+    return rom_str
+
+# integer = 58
+integer = 1994
+
+print(int_to_rom(integer))
+
+TAGS = ["CONVERSION", "ROMAN_NUMERALS"]
