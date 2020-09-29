@@ -1,4 +1,4 @@
-# Integer to Roman
+# Integer To Roman
 # Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 # Symbol  Value
 # I       1
@@ -9,7 +9,7 @@
 # D       500
 # M       1000
 # For example, two is written as II in Roman numeral, just two one's added together.
-# Twelve is written as, XII, which si simply X + II.
+# Twelve is written as, XII, which is simply X + II.
 # The number twenty seven is written as XXVII, which is XX + V + II.
 # Roman numerals are usually written largest to smallest from left to right.
 # However, the numeral for four is not IIII.
@@ -34,7 +34,7 @@
 # Example 4:
 # Input: 58
 # Output: "LVIII"
-# Explanation: C = 100, L = 50, XXX = 30 and III = 3
+# Explanation: L = 50, V = 5, III = 3
 # Example 5:
 # Input: 1994
 # Output: "MCMXCIV"
