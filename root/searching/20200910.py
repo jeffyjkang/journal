@@ -25,4 +25,4 @@ nums = [2, 7, 11, 15]
 target = 9
 two_sum(nums,target)
 
-TAGS = ['SEARCH']
+TAGS = ['SEARCH', 'SUM']
