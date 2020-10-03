@@ -14,14 +14,13 @@
 
 def three_sum(nums):
     # edge case, if the length of nums is less than 3, return an empty list
-    if len(nums) < 3:
-        return []
+    if len(nums) < 3: return []
     # sort the nums list (python: timsort)
     nums.sort()
     # initialize result list to an empty list
     result_list = []
     # loop through each index until the third to last
-    for i in range(len(nums)-2):
+    for i in range(len(nums) - 2):
         # if index is greater than 0 and the value is the same as the previous, skip iteration, this prevents duplicates on the 0th indices
         if i > 0 and nums[i] == nums[i-1]:
             continue
