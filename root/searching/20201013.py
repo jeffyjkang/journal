@@ -26,7 +26,7 @@ def four_sum(nums, target):
         if i > 0 and nums[i] == nums[i - 1]:
             continue
         # loop through each index from after i until the third to last
-        for j in range(i+1, len(nums) - 2):
+        for j in range(i + 1, len(nums) - 2):
             # again skip iteration to prevent duplicates, however check if j index is greater than i index plus 1 and the value is the same as the previous
             if j > i + 1 and nums[j] == nums[j - 1]:
                 continue
