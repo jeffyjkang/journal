@@ -9,7 +9,6 @@
 # Output: 4
 # Explanation: The longest valid parentheses substring is "()()"
 
-
 def longest_valid_parentheses(s):
     # initialize stack with arbitrary placeholder value of -1
     stack = [-1]
