@@ -16,7 +16,7 @@ def search(n, t):
     lo = 0; hi = len(n) - 1
     # loop while lo is less than or equal to hi, lo and hi will be modified through a binary search pattern
     while lo <= hi:
-        # assign a mid pointer to the floored quotient of (the sum of lo and the difference of hi and lo), and 2
+        # assign a mid pointer to the sum of lo and the floored quotient of (the difference of hi and lo and 2)
         mid = lo + (hi - lo) // 2
         # if the target is found via the value of n at index mid, return the index
         if n[mid] == t:
