@@ -32,7 +32,7 @@ def first_missing_positive(n):
             n[i] = 1
     # loop through numbers array again
     for i in range(len(n)):
-        # increase every ith number by the length of the numbers array
+        # for every ith number increase the value of n at index n[i] - 1 by the length of the numbers array
         n[(n[i] - 1) % len(n)] += len(n)
     # loop through the numbers array a final time
     for i in range(len(n)):
